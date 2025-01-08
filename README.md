@@ -1,7 +1,5 @@
 # Time Chapter
 
-![Time Chapter Logo](./public/logo.png)
-
 Time Chapter is a comprehensive time management application built with [Next.js](https://nextjs.org). It allows users to log daily activities, manage todos, and customize their experience with themes and time settings. Whether you're tracking your daily tasks or reflecting on your productivity, Time Chapter provides the tools you need to stay organized and efficient.
 
 ## Features
