@@ -38,7 +38,7 @@ Ensure you have **Node.js** and **npm** (or **yarn**, **pnpm**, **bun**) install
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/time-chapter.git
+   git clone https://github.com/davidinfosec/time-chapter.git
    cd time-chapter
    ```
 
