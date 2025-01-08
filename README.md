@@ -17,10 +17,12 @@ Time Chapter is a comprehensive time management application built with [Next.js]
 
 ## Screenshots
 
-![Dashboard](./public/screenshot-dashboard.png)
+![image](https://github.com/user-attachments/assets/50098224-7cd2-47db-a98f-ac522cd99cda)
+
 *Dashboard showcasing logs and todos.*
 
-![Settings](./public/screenshot-settings.png)
+![image](https://github.com/user-attachments/assets/56ff7f15-3260-486b-89a0-0c5417dd2b73)
+
 *Settings modal with theme and timezone options.*
 
 ## Getting Started
