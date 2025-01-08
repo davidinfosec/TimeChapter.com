@@ -1,8 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Time Chapter
+
+![Time Chapter Logo](./public/logo.png)
+
+Time Chapter is a comprehensive time management application built with [Next.js](https://nextjs.org). It allows users to log daily activities, manage todos, and customize their experience with themes and time settings. Whether you're tracking your daily tasks or reflecting on your productivity, Time Chapter provides the tools you need to stay organized and efficient.
+
+## Features
+
+- **User Authentication**: Secure login system with "Remember Me" functionality.
+- **Logs Management**: Add, edit, and remove logs to document daily activities.
+- **Todos Management**: Create, edit, and manage todos with automatic matching from logs.
+- **Import & Export**: Easily import and export logs and todos in plain text format.
+- **Customizable Settings**:
+  - **Themes**: Switch between light and dark modes.
+  - **Timezone**: Select your preferred timezone for accurate timestamping.
+  - **Time Format**: Choose between 12-hour and 24-hour formats.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Local Storage**: Data is persisted locally per user for a seamless experience.
+
+## Screenshots
+
+![Dashboard](./public/screenshot-dashboard.png)
+*Dashboard showcasing logs and todos.*
+
+![Settings](./public/screenshot-settings.png)
+*Settings modal with theme and timezone options.*
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have **Node.js** and **npm** (or **yarn**, **pnpm**, **bun**) installed on your machine.
+
+- [Download Node.js](https://nodejs.org/)
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/time-chapter.git
+   cd time-chapter
+   ```
+
+2. **Install Dependencies**
+
+   Using **npm**:
+
+   ```bash
+   npm install
+   ```
+
+   Or using **yarn**:
+
+   ```bash
+   yarn install
+   ```
+
+   Or using **pnpm**:
+
+   ```bash
+   pnpm install
+   ```
+
+   Or using **bun**:
+
+   ```bash
+   bun install
+   ```
+
+### Running the Development Server
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -14,23 +82,139 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the application for production:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+# or
+bun build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+# or
+yarn start
+# or
+pnpm start
+# or
+bun start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. **Login**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   - Use the following mock credentials to log in:
+     - **Username**: `admin`
+     - **Password**: `admin`
+     - **Username**: `user`
+     - **Password**: `user`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Manage Logs**
+
+   - **Add Log**: Enter your activity in the "Add new log" field and press "Add" or hit Enter.
+   - **Edit Log**: Click the edit icon (✎) next to a log to modify its time or content.
+   - **Remove Log**: Click the remove icon (✕) to delete a log.
+   - **Import Logs**: Use the import icon (⬆️) to import logs from a `.txt` file or paste text directly.
+   - **Export Logs**: Click the save icon (💾) to export logs as a `.txt` file.
+   - **Copy Logs**: Use the copy icon (📋) to copy all logs to your clipboard.
+
+3. **Manage Todos**
+
+   - **Add Todo**: Enter your task in the "Add new todo" field and press "Add" or hit Enter.
+   - **Edit Todo**: Click the edit icon (✎) next to a todo to modify its content.
+   - **Remove Todo**: Click the remove icon (✕) to delete a todo.
+   - **Import Todos**: Use the import icon (⬆️) to import todos from a `.txt` file or paste text directly.
+   - **Export Todos**: Click the save icon (💾) to export todos as a `.txt` file.
+   - **Copy Todos**: Use the copy icon (📋) to copy all todos to your clipboard.
+   - **Sync with Logs**: Automatically checks todos when matching logs are added. Manually override completion status as needed.
+
+4. **Settings**
+
+   - **Theme**: Toggle between light and dark modes.
+   - **Timezone**: Select your preferred timezone to ensure accurate timestamps.
+   - **Time Format**: Choose between 12-hour and 24-hour formats.
+
+## Deployment
+
+The easiest way to deploy your Next.js application is by using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), created by the makers of Next.js.
+
+### Deploy with Vercel
+
+1. **Sign Up / Log In** to [Vercel](https://vercel.com/).
+
+2. **Import Project**:
+   - Click on "New Project".
+   - Select your Git repository (e.g., GitHub, GitLab, Bitbucket).
+   - Follow the prompts to configure your project.
+
+3. **Configure Settings**:
+   - Ensure the **Framework Preset** is set to **Next.js**.
+   - Adjust any environment variables if necessary.
+
+4. **Deploy**:
+   - Click "Deploy" and wait for Vercel to build and deploy your application.
+   - Once deployed, you can access your app via the provided URL.
+
+For more details, refer to the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org) - React framework for production.
+- [React](https://reactjs.org) - JavaScript library for building user interfaces.
+- [Lucide React](https://lucide.dev/) - Icon library.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
+- [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) - Client-side storage for persisting user data.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or feature requests.
+
+1. **Fork the repository**
+
+2. **Create a new branch**
+
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+
+3. **Commit your changes**
+
+   ```bash
+   git commit -m "Add some feature"
+   ```
+
+4. **Push to the branch**
+
+   ```bash
+   git push origin feature/YourFeature
+   ```
+
+5. **Open a Pull Request**
+
+## License
+
+[MIT](./LICENSE)
+
+## Acknowledgements
+
+- Inspired by various time management and productivity tools.
+- Built with ❤️ using Next.js and React.
+
+## Contact
+
+For any inquiries or support, please contact [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+*This project is bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).*
