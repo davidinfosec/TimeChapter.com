@@ -39,7 +39,7 @@ Ensure you have **Node.js** and **npm** (or **yarn**, **pnpm**, **bun**) install
 
    ```bash
    git clone https://github.com/davidinfosec/TimeChapter.com.git
-   cd time-chapter
+   cd TimeChapter.com
    ```
 
 2. **Install Dependencies**
